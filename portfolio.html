@@ -1,0 +1,1011 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+   
+   <!--
+   Project Name : Portfolio
+   Type : Website Developing 
+   Developer : Alin (alinsworld.com)
+   Completed date : 
+   Design (full psd and developing all) : by Alin (using Photoshop CS5)
+   Using to develope : Bootstrap 3.2.0, HTML5, CSS3, JavaScript, jQuery 
+   Responsive for : 
+   -->
+   
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio - Portfolio</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    
+     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    
+    <!-- my own style sheet -->
+    <link rel="stylesheet" href="css/mystyle2.css">
+    
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- using google font -->
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
+    
+    <!-- font awesome -->
+    <link rel="stylesheet" id="font-awesome-css" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" type="text/css" media="screen">
+    
+    
+    
+    <!-- portfolio_script_javascript-->
+     <script type="text/javascript" src="js/jquery.min.js"></script> <!-- must need to work with jQuery -->
+     <script src="js/jquery.isotope.min.js"></script> <!-- must need to work -->
+	 <script src="js/custom.js"></script>  <!-- must need to display all items -->
+	 <script src="js/modernizr.custom.js"></script> <!-- description for images withing an image -->
+
+
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <link rel="stylesheet" href="css/prettyPhoto.css">
+    
+    
+     <!-- slide panel -->    
+    <script type="text/javascript" src="SlidePanel/js/jquery.slidepanel.js"></script>
+    <link rel="stylesheet" type="text/css" href="SlidePanel/css/jquery.slidepanel.css"> 
+
+
+
+    
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    
+    
+    <style>
+        #side_menu {
+            padding-left: 0;
+        }
+        
+        .navbar-default {
+            background-color: #2c2c2c;
+        }
+        
+        #filters li {
+            margin-bottom: 5px;
+        }
+        
+    </style>
+    
+    
+    
+     <!-- go to top -->
+    <script>
+ 
+    $(function(){
+
+        $(document).on( 'scroll', function(){
+
+            if ($(window).scrollTop() > 100) {
+                $('.scroll-top-wrapper').addClass('show');
+            } else {
+                $('.scroll-top-wrapper').removeClass('show');
+            }
+        });
+    });
+        
+        $(function(){
+ 
+            $(document).on( 'scroll', function(){
+
+                if ($(window).scrollTop() > 100) {
+                    $('.scroll-top-wrapper').addClass('show');
+                } else {
+                    $('.scroll-top-wrapper').removeClass('show');
+                }
+            });
+
+            $('.scroll-top-wrapper').on('click', scrollToTop);
+        });
+ 
+        function scrollToTop() {
+            verticalOffset = typeof(verticalOffset) != 'undefined' ? verticalOffset : 0;
+            element = $('body');
+            offset = element.offset();
+            offsetTop = offset.top;
+            $('html, body').animate({scrollTop: offsetTop}, 500, 'linear');
+        }
+      </script>
+    <!-- / go to top -->
+
+  </head>
+
+  <body>
+      <!-- main container -->
+      <div class="container-fluid" id="main_container">
+         <!-- inner container -->
+          <div class="conainer-fluid" id="inner_container">
+            
+            <!-- sideber menu -->
+            <div class="container-fluid" id="side_menu">
+               <div class="row">
+                   <div class="col-md-12 col-sm-12 col-xs-12">
+                        <a href="sidepanel_left.html" data-slidepanel="panel">
+                            <span class="glyphicon glyphicon-th-list"></span>
+                        </a> 
+                   </div>
+               </div>                
+            </div> <!-- /sidebar menu-->
+            
+             <!-- top -->
+             <div class="container-fluid" id="top">
+                 <div class="row-fluid">
+                     <!-- logo -->
+                     <div class="col-md-5 col-sm-5 col-xs-12" id="logo">
+                         <img src="img/logo1.jpg" alt="">    
+                     </div> <!-- /logo -->
+                 </div>
+             </div> <!-- /top -->
+             
+             
+             <!-- Go to top -->
+            <div class="scroll-top-wrapper">
+            <!-- if use span then need internet to display this icon -->
+            <span class="scroll-top-inner">
+            <i class="fa fa-2x fa-arrow-circle-up"></i>
+            </span> 
+            <!-- <img src="img/Scroll-to-top-button-white.png" alt="" style="width:80%;margin-top:-8px;"> -->
+            </div>
+            <!-- /Go to top -->
+            
+             
+             <!-- middle -->
+             <div class="container-fluid" id="middle">
+                
+                
+                <div class="container-fluid" id="portfolio_inner">
+                    
+                      
+<!-- ======================================== Portfolio items will be added here ============================================== -->
+                     
+                      <!-- portfolio items -->
+                     <div class="row-fluid" id="category_items">
+                
+                            <!-- Portfolio items are added here -->
+                            <ul id="container" class="clickable cs-style-5 grid clearfix isotope" style="position: relative; overflow: hidden; height: 534px; width: 1475px;">
+
+
+                                <!-- logo design -->
+                                <li class="element logo-design isotope-item" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(295px, 0px, 0px);">
+                                  <figure>
+                                      <img src="portfolioItems/logo_design/logo-1.jpg" alt="">
+                                      <figcaption>
+                                            <h3><a href="#">69Monos</a></h3>
+                                            <div class="meta-box clearfix">
+                                                <span class="entry-categories">Logo design for BGTTC project.</span>
+                                            </div>
+                                   
+                                            <footer style="padding:0 10px;">
+                                                <div style="float:left;" id="nivo-lightbox-demo"> <p> <a href="portfolioItems/big/logo_design/logo-1.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo" rel="prettyPhoto[portfolio]">View</a> </p></div> 
+                                                 <div style="float:right;" id="nivo-lightbox-demo"><p> <a href="#">Details</a> </p></div>                                 
+                                            </footer>
+                                        </figcaption>
+                                    </figure>
+
+                                </li>
+                                
+                                <li class="element logo-design isotope-item" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(295px, 0px, 0px);">
+                                  <figure>
+                                      <img src="portfolioItems/logo_design/logo-2.jpg" alt="">
+                                      <figcaption>
+                                            <h3><a href="#">69Monos</a></h3>
+                                            <div class="meta-box clearfix">
+                                                <span class="entry-categories">Logo design for BGTTC project.</span>
+                                            </div>
+                                   
+                                            <footer style="padding:0 10px;">
+                                                <div style="float:left;" id="nivo-lightbox-demo"> <p> <a href="portfolioItems/big/logo_design/logo-2.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo" rel="prettyPhoto[portfolio]">View</a> </p></div> 
+                                                 <div style="float:right;" id="nivo-lightbox-demo"><p> <a href="#">Details</a> </p></div>                                 
+                                            </footer>
+                                        </figcaption>
+                                    </figure>
+
+                                </li>
+                                
+                                <li class="element logo-design isotope-item" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(295px, 0px, 0px);">
+                                  <figure>
+                                      <img src="portfolioItems/logo_design/logo-3.jpg" alt="">
+                                      <figcaption>
+                                            <h3><a href="#">69Monos</a></h3>
+                                            <div class="meta-box clearfix">
+                                                <span class="entry-categories">Logo design for BGTTC project.</span>
+                                            </div>
+                                   
+                                            <footer style="padding:0 10px;">
+                                                <div style="float:left;" id="nivo-lightbox-demo"> <p> <a href="portfolioItems/big/logo_design/logo-3.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo" rel="prettyPhoto[portfolio]">View</a> </p></div> 
+                                                 <div style="float:right;" id="nivo-lightbox-demo"><p> <a href="#">Details</a> </p></div>                                 
+                                            </footer>
+                                        </figcaption>
+                                    </figure>
+
+                                </li>
+                                
+                                <li class="element logo-design isotope-item" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(295px, 0px, 0px);">
+                                  <figure>
+                                      <img src="portfolioItems/logo_design/logo-4.jpg" alt="">
+                                      <figcaption>
+                                            <h3><a href="#">69Monos</a></h3>
+                                            <div class="meta-box clearfix">
+                                                <span class="entry-categories">Logo design for BGTTC project.</span>
+                                            </div>
+                                   
+                                            <footer style="padding:0 10px;">
+                                                <div style="float:left;" id="nivo-lightbox-demo"> <p> <a href="portfolioItems/big/logo_design/logo-4.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo" rel="prettyPhoto[portfolio]">View</a> </p></div> 
+                                                 <div style="float:right;" id="nivo-lightbox-demo"><p> <a href="#">Details</a> </p></div>                                 
+                                            </footer>
+                                        </figcaption>
+                                    </figure>
+
+                                </li>
+                                
+                                <li class="element logo-design isotope-item" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(295px, 0px, 0px);">
+                                  <figure>
+                                      <img src="portfolioItems/logo_design/logo-5.jpg" alt="">
+                                      <figcaption>
+                                            <h3><a href="#">69Monos</a></h3>
+                                            <div class="meta-box clearfix">
+                                                <span class="entry-categories">Logo design for BGTTC project.</span>
+                                            </div>
+                                   
+                                            <footer style="padding:0 10px;">
+                                                <div style="float:left;" id="nivo-lightbox-demo"> <p> <a href="portfolioItems/big/logo_design/logo-5.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo" rel="prettyPhoto[portfolio]">View</a> </p></div> 
+                                                 <div style="float:right;" id="nivo-lightbox-demo"><p> <a href="#">Details</a> </p></div>                                 
+                                            </footer>
+                                        </figcaption>
+                                    </figure>
+
+                                </li>
+                                <!-- /logo design -->
+                                
+                                
+                                <!-- photography -->
+                                <li class="element photography isotope-item" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(295px, 0px, 0px);">
+                                  <figure>
+                                      <img src="portfolioItems/photography/pg-1.jpg" alt="">
+                                      <figcaption>
+                                            <h3><a href="#">Photography</a></h3>
+                                            <div class="meta-box clearfix">
+                                                <span class="entry-categories">2MP Camera</span>
+                                            </div>
+                                   
+                                            <footer style="padding:0 10px;">
+                                                <div style="float:left;" id="nivo-lightbox-demo"> <p> <a href="portfolioItems/big/photography/pg-1.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo" rel="prettyPhoto[portfolio]">View</a> </p></div> 
+                                                 <div style="float:right;" id="nivo-lightbox-demo"><p> <a href="#">Details</a> </p></div>                                 
+                                            </footer>
+                                        </figcaption>
+                                    </figure>
+
+                                </li>
+                                
+                                 <li class="element photography isotope-item" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(295px, 0px, 0px);">
+                                  <figure>
+                                      <img src="portfolioItems/photography/pg-2.jpg" alt="">
+                                      <figcaption>
+                                            <h3><a href="#">Photography</a></h3>
+                                            <div class="meta-box clearfix">
+                                                <span class="entry-categories">2MP Camera</span>
+                                            </div>
+                                   
+                                            <footer style="padding:0 10px;">
+                                                <div style="float:left;" id="nivo-lightbox-demo"> <p> <a href="portfolioItems/big/photography/pg-2.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo" rel="prettyPhoto[portfolio]">View</a> </p></div> 
+                                                 <div style="float:right;" id="nivo-lightbox-demo"><p> <a href="#" >Details</a> </p></div>                                 
+                                            </footer>
+                                        </figcaption>
+                                    </figure>
+
+                                </li>
+                                
+                                 <li class="element photography isotope-item" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(295px, 0px, 0px);">
+                                  <figure>
+                                      <img src="portfolioItems/photography/pg-3.jpg" alt="">
+                                      <figcaption>
+                                            <h3><a href="#">Photography</a></h3>
+                                            <div class="meta-box clearfix">
+                                                <span class="entry-categories">2MP Camera</span>
+                                            </div>
+                                   
+                                            <footer style="padding:0 10px;">
+                                                <div style="float:left;" id="nivo-lightbox-demo"> <p> <a href="portfolioItems/big/photography/pg-3.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo" rel="prettyPhoto[portfolio]">View</a> </p></div> 
+                                                 <div style="float:right;" id="nivo-lightbox-demo"><p> <a href="#" >Details</a> </p></div>                                 
+                                            </footer>
+                                        </figcaption>
+                                    </figure>
+
+                                </li>
+                                
+                                 <li class="element photography isotope-item" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(295px, 0px, 0px);">
+                                  <figure>
+                                      <img src="portfolioItems/photography/pg-4.jpg" alt="">
+                                      <figcaption>
+                                            <h3><a href="#">Photography</a></h3>
+                                            <div class="meta-box clearfix">
+                                                <span class="entry-categories">2MP Camera</span>
+                                            </div>
+                                   
+                                            <footer style="padding:0 10px;">
+                                                <div style="float:left;" id="nivo-lightbox-demo"> <p> <a href="portfolioItems/big/photography/pg-4.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo" rel="prettyPhoto[portfolio]">View</a> </p></div> 
+                                                 <div style="float:right;" id="nivo-lightbox-demo"><p> <a href="#" >Details</a> </p></div>                                 
+                                            </footer>
+                                        </figcaption>
+                                    </figure>
+
+                                </li>
+                                
+                                 <li class="element photography isotope-item" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(295px, 0px, 0px);">
+                                  <figure>
+                                      <img src="portfolioItems/photography/pg-5.jpg" alt="">
+                                      <figcaption>
+                                            <h3><a href="#">Photography</a></h3>
+                                            <div class="meta-box clearfix">
+                                                <span class="entry-categories">2MP Camera</span>
+                                            </div>
+                                   
+                                            <footer style="padding:0 10px;">
+                                                <div style="float:left;" id="nivo-lightbox-demo"> <p> <a href="portfolioItems/big/photography/pg-5.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo" rel="prettyPhoto[portfolio]">View</a> </p></div> 
+                                                 <div style="float:right;" id="nivo-lightbox-demo"><p> <a href="#" >Details</a> </p></div>                                 
+                                            </footer>
+                                        </figcaption>
+                                    </figure>
+
+                                </li>
+                                
+                                 <li class="element photography isotope-item" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(295px, 0px, 0px);">
+                                  <figure>
+                                      <img src="portfolioItems/photography/pg-6.jpg" alt="">
+                                      <figcaption>
+                                            <h3><a href="#">Photography</a></h3>
+                                            <div class="meta-box clearfix">
+                                                <span class="entry-categories">2MP Camera</span>
+                                            </div>
+                                   
+                                            <footer style="padding:0 10px;">
+                                                <div style="float:left;" id="nivo-lightbox-demo"> <p> <a href="portfolioItems/big/photography/pg-6.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo" rel="prettyPhoto[portfolio]">View</a> </p></div> 
+                                                 <div style="float:right;" id="nivo-lightbox-demo"><p> <a href="#" >Details</a> </p></div>                                 
+                                            </footer>
+                                        </figcaption>
+                                    </figure>
+
+                                </li>
+                                <!-- /photography -->
+                                
+                                
+                                <!-- vector art -->
+                                <li class="element vector-art isotope-item" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(295px, 0px, 0px);">
+                                  <figure>
+                                      <img src="portfolioItems/vector_art/va-1.jpg" alt="">
+                                      <figcaption>
+                                            <h3><a href="#">Vector Art</a></h3>
+                                            <div class="meta-box clearfix">
+                                                <span class="entry-categories">Illustrator CS4</span>
+                                            </div>
+                                   
+                                            <footer style="padding:0 10px;">
+                                                <div style="float:left;" id="nivo-lightbox-demo"> <p> <a href="portfolioItems/big/vector_art/va-1.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo" rel="prettyPhoto[portfolio]">View</a> </p></div> 
+                                                 <div style="float:right;" id="nivo-lightbox-demo"><p> <a href="#" >Details</a> </p></div>                                 
+                                            </footer>
+                                        </figcaption>
+                                    </figure>
+
+                                </li>
+                                
+                                 <li class="element vector-art isotope-item" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(295px, 0px, 0px);">
+                                  <figure>
+                                      <img src="portfolioItems/vector_art/va-11.jpg" alt="">
+                                      <figcaption>
+                                            <h3><a href="#">Vector Art</a></h3>
+                                            <div class="meta-box clearfix">
+                                                <span class="entry-categories">Illustrator CS4</span>
+                                            </div>
+                                   
+                                            <footer style="padding:0 10px;">
+                                                <div style="float:left;" id="nivo-lightbox-demo"> <p> <a href="portfolioItems/big/vector_art/va-11.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo" rel="prettyPhoto[portfolio]">View</a> </p></div> 
+                                                 <div style="float:right;" id="nivo-lightbox-demo"><p> <a href="#" >Details</a> </p></div>                                 
+                                            </footer>
+                                        </figcaption>
+                                    </figure>
+
+                                </li>
+                                
+                                 <li class="element vector-art isotope-item" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(295px, 0px, 0px);">
+                                  <figure>
+                                      <img src="portfolioItems/vector_art/va-12.jpg" alt="">
+                                      <figcaption>
+                                            <h3><a href="#">Vector Art</a></h3>
+                                            <div class="meta-box clearfix">
+                                                <span class="entry-categories">Illustrator CS4</span>
+                                            </div>
+                                   
+                                            <footer style="padding:0 10px;">
+                                                <div style="float:left;" id="nivo-lightbox-demo"> <p> <a href="portfolioItems/big/vector_art/va-12.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo" rel="prettyPhoto[portfolio]">View</a> </p></div> 
+                                                 <div style="float:right;" id="nivo-lightbox-demo"><p> <a href="#" >Details</a> </p></div>                                 
+                                            </footer>
+                                        </figcaption>
+                                    </figure>
+
+                                </li>
+                                
+                                 <li class="element vector-art isotope-item" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(295px, 0px, 0px);">
+                                  <figure>
+                                      <img src="portfolioItems/vector_art/va-13.jpg" alt="">
+                                      <figcaption>
+                                            <h3><a href="#">Vector Art</a></h3>
+                                            <div class="meta-box clearfix">
+                                                <span class="entry-categories">Illustrator CS4</span>
+                                            </div>
+                                   
+                                            <footer style="padding:0 10px;">
+                                                <div style="float:left;" id="nivo-lightbox-demo"> <p> <a href="portfolioItems/big/vector_art/va-13.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo" rel="prettyPhoto[portfolio]">View</a> </p></div> 
+                                                 <div style="float:right;" id="nivo-lightbox-demo"><p> <a href="#" >Details</a> </p></div>                                 
+                                            </footer>
+                                        </figcaption>
+                                    </figure>
+
+                                </li>
+                                
+                                 <li class="element vector-art isotope-item" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(295px, 0px, 0px);">
+                                  <figure>
+                                      <img src="portfolioItems/vector_art/va-14.jpg" alt="">
+                                      <figcaption>
+                                            <h3><a href="#">Vector Art</a></h3>
+                                            <div class="meta-box clearfix">
+                                                <span class="entry-categories">Illustrator CS4</span>
+                                            </div>
+                                   
+                                            <footer style="padding:0 10px;">
+                                                <div style="float:left;" id="nivo-lightbox-demo"> <p> <a href="portfolioItems/big/vector_art/va-14.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo" rel="prettyPhoto[portfolio]">View</a> </p></div> 
+                                                 <div style="float:right;" id="nivo-lightbox-demo"><p> <a href="#" >Details</a> </p></div>                                 
+                                            </footer>
+                                        </figcaption>
+                                    </figure>
+
+                                </li>
+                                
+                                 <li class="element vector-art isotope-item" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(295px, 0px, 0px);">
+                                  <figure>
+                                      <img src="portfolioItems/vector_art/va-2.jpg" alt="">
+                                      <figcaption>
+                                            <h3><a href="#">Vector Art</a></h3>
+                                            <div class="meta-box clearfix">
+                                                <span class="entry-categories">Illustrator CS4</span>
+                                            </div>
+                                   
+                                            <footer style="padding:0 10px;">
+                                                <div style="float:left;" id="nivo-lightbox-demo"> <p> <a href="portfolioItems/big/vector_art/va-2.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo" rel="prettyPhoto[portfolio]">View</a> </p></div> 
+                                                 <div style="float:right;" id="nivo-lightbox-demo"><p> <a href="#" >Details</a> </p></div>                                 
+                                            </footer>
+                                        </figcaption>
+                                    </figure>
+
+                                </li>
+                                
+                                 <li class="element vector-art isotope-item" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(295px, 0px, 0px);">
+                                  <figure>
+                                      <img src="portfolioItems/vector_art/va-4.jpg" alt="">
+                                      <figcaption>
+                                            <h3><a href="#">Vector Art</a></h3>
+                                            <div class="meta-box clearfix">
+                                                <span class="entry-categories">Illustrator CS4</span>
+                                            </div>
+                                   
+                                            <footer style="padding:0 10px;">
+                                                <div style="float:left;" id="nivo-lightbox-demo"> <p> <a href="portfolioItems/big/vector_art/va-4.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo" rel="prettyPhoto[portfolio]">View</a> </p></div> 
+                                                 <div style="float:right;" id="nivo-lightbox-demo"><p> <a href="#" >Details</a> </p></div>                                 
+                                            </footer>
+                                        </figcaption>
+                                    </figure>
+
+                                </li>
+                                
+                                 <li class="element vector-art isotope-item" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(295px, 0px, 0px);">
+                                  <figure>
+                                      <img src="portfolioItems/vector_art/va-5.jpg" alt="">
+                                      <figcaption>
+                                            <h3><a href="#">Vector Art</a></h3>
+                                            <div class="meta-box clearfix">
+                                                <span class="entry-categories">Illustrator CS4</span>
+                                            </div>
+                                   
+                                            <footer style="padding:0 10px;">
+                                                <div style="float:left;" id="nivo-lightbox-demo"> <p> <a href="portfolioItems/big/vector_art/va-5.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo" rel="prettyPhoto[portfolio]">View</a> </p></div> 
+                                                 <div style="float:right;" id="nivo-lightbox-demo"><p> <a href="#" >Details</a> </p></div>                                 
+                                            </footer>
+                                        </figcaption>
+                                    </figure>
+
+                                </li>
+                                
+                                 <li class="element vector-art isotope-item" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(295px, 0px, 0px);">
+                                  <figure>
+                                      <img src="portfolioItems/vector_art/va-7.jpg" alt="">
+                                      <figcaption>
+                                            <h3><a href="#">Vector Art</a></h3>
+                                            <div class="meta-box clearfix">
+                                                <span class="entry-categories">Illustrator CS4</span>
+                                            </div>
+                                   
+                                            <footer style="padding:0 10px;">
+                                                <div style="float:left;" id="nivo-lightbox-demo"> <p> <a href="portfolioItems/big/vector_art/va-7.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo" rel="prettyPhoto[portfolio]">View</a> </p></div> 
+                                                 <div style="float:right;" id="nivo-lightbox-demo"><p> <a href="#" >Details</a> </p></div>                                 
+                                            </footer>
+                                        </figcaption>
+                                    </figure>
+
+                                </li>
+                                
+                                 <li class="element vector-art isotope-item" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(295px, 0px, 0px);">
+                                  <figure>
+                                      <img src="portfolioItems/vector_art/va-8.jpg" alt="">
+                                      <figcaption>
+                                            <h3><a href="#">Vector Art</a></h3>
+                                            <div class="meta-box clearfix">
+                                                <span class="entry-categories">Illustrator CS4</span>
+                                            </div>
+                                   
+                                            <footer style="padding:0 10px;">
+                                                <div style="float:left;" id="nivo-lightbox-demo"> <p> <a href="portfolioItems/big/vector_art/va-8.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo" rel="prettyPhoto[portfolio]">View</a> </p></div> 
+                                                 <div style="float:right;" id="nivo-lightbox-demo"><p> <a href="#" >Details</a> </p></div>                                 
+                                            </footer>
+                                        </figcaption>
+                                    </figure>
+
+                                </li>
+                                
+                                 <li class="element vector-art isotope-item" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(295px, 0px, 0px);">
+                                  <figure>
+                                      <img src="portfolioItems/vector_art/va-9.jpg" alt="">
+                                      <figcaption>
+                                            <h3><a href="#">Vector Art</a></h3>
+                                            <div class="meta-box clearfix">
+                                                <span class="entry-categories">Illustrator CS4</span>
+                                            </div>
+                                   
+                                            <footer style="padding:0 10px;">
+                                                <div style="float:left;" id="nivo-lightbox-demo"> <p> <a href="portfolioItems/big/vector_art/va-9.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo" rel="prettyPhoto[portfolio]">View</a> </p></div> 
+                                                 <div style="float:right;" id="nivo-lightbox-demo"><p> <a href="#" >Details</a> </p></div>                                 
+                                            </footer>
+                                        </figcaption>
+                                    </figure>
+
+                                </li>
+                                <!-- /vector art -->
+                                
+                                
+                                
+                                <!-- web -->
+                                <li class="element web isotope-item" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(295px, 0px, 0px);">
+                                  <figure>
+                                      <img src="portfolioItems/web/alinsworld/aboutme.jpg" alt="">
+                                      <figcaption>
+                                            <h3><a href="#">Web Developing</a></h3>
+                                            <div class="meta-box clearfix">
+                                                <span class="entry-categories">Web and Mobile App Development</span>
+                                            </div>
+                                   
+                                            <footer style="padding:0 10px;">
+                                                <div style="float:left;" id="nivo-lightbox-demo"> <p> <a href="portfolioItems/big/web/alinsworld/aboutme.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo" rel="prettyPhoto[portfolio]">View</a> </p></div> 
+                                                 <div style="float:right;" id="nivo-lightbox-demo"><p> <a href="http://alinsworld.com/aboutme/" target="_blank">Demo</a> </p></div>                                 
+                                            </footer>
+                                        </figcaption>
+                                    </figure>
+
+                                </li>
+                                
+                                <li class="element web isotope-item" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(295px, 0px, 0px);">
+                                  <figure>
+                                      <img src="portfolioItems/web/alinsworld/alinsworld.jpg" alt="">
+                                      <figcaption>
+                                            <h3><a href="#">Web Developing</a></h3>
+                                            <div class="meta-box clearfix">
+                                                <span class="entry-categories">Web and Mobile app Development</span>
+                                            </div>
+                                   
+                                            <footer style="padding:0 10px;">
+                                                <div style="float:left;" id="nivo-lightbox-demo"> <p> <a href="portfolioItems/big/web/alinsworld/alinsworld.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo" rel="prettyPhoto[portfolio]">View</a> </p></div> 
+                                                 <div style="float:right;" id="nivo-lightbox-demo"><p> <a href="http://www.alinsworld.com/" target="_blank">Demo</a> </p></div>                                 
+                                            </footer>
+                                        </figcaption>
+                                    </figure>
+
+                                </li>
+                                
+                                 <li class="element web isotope-item" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(295px, 0px, 0px);">
+                                  <figure>
+                                      <img src="portfolioItems/web/alinsworld/blog.jpg" alt="">
+                                      <figcaption>
+                                            <h3><a href="#">Web Developing</a></h3>
+                                            <div class="meta-box clearfix">
+                                                <span class="entry-categories">Web and Mobile app Development</span>
+                                            </div>
+                                   
+                                            <footer style="padding:0 10px;">
+                                                <div style="float:left;" id="nivo-lightbox-demo"> <p> <a href="portfolioItems/big/web/alinsworld/blog.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo" rel="prettyPhoto[portfolio]">View</a> </p></div> 
+                                                 <div style="float:right;" id="nivo-lightbox-demo"><p> <a href="http://blog.alinsworld.com/" target="_blank">Demo</a> </p></div>                                 
+                                            </footer>
+                                        </figcaption>
+                                    </figure>
+
+                                </li>
+                                
+                                <li class="element web isotope-item" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(295px, 0px, 0px);">
+                                  <figure>
+                                      <img src="portfolioItems/web/travel/traval_desktop.jpg" alt="">
+                                      <figcaption>
+                                            <h3><a href="#">Web Developing</a></h3>
+                                            <div class="meta-box clearfix">
+                                                <span class="entry-categories">Web and Mobile app Development</span>
+                                            </div>
+                                   
+                                            <footer style="padding:10px 10px;">
+                                                <div style="float:left;" id="nivo-lightbox-demo"> <p> <a href="portfolioItems/big/web/travel/traval_desktop.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo" rel="prettyPhoto[portfolio]">View</a> </p></div> 
+                                                 <div style="float:right;" id="nivo-lightbox-demo"><p> <a href="http://rezwansaki.github.io/travel/" target="_blank">Demo</a> </p></div>                                 
+                                            </footer>
+                                        </figcaption>
+                                    </figure>
+
+                                </li>
+                                
+                                  <li class="element web isotope-item" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(295px, 0px, 0px);">
+                                  <figure>
+                                      <img src="portfolioItems/web/ytube.jpg" alt="">
+                                      <figcaption>
+                                            <h3><a href="#">Web Developing</a></h3>
+                                            <div class="meta-box clearfix">
+                                                <span class="entry-categories">Web and Mobile app Development</span>
+                                            </div>
+                                   
+                                            <footer style="padding:10px 10px;">
+                                                <div style="float:left;" id="nivo-lightbox-demo"> <p> <a href="portfolioItems/big/web/ytube.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo" rel="prettyPhoto[portfolio]">View</a> </p></div> 
+                                                 <div style="float:right;" id="nivo-lightbox-demo"><p> <a href="http://rezwansaki.github.io/youtubedemo2/" target="_blank">Demo</a> </p></div>                                 
+                                            </footer>
+                                        </figcaption>
+                                    </figure>
+
+                                </li>  
+                                
+                                   <li class="element web isotope-item" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(295px, 0px, 0px);">
+                                  <figure>
+                                      <img src="portfolioItems/web/portfolio/portfolio.jpg" alt="">
+                                      <figcaption>
+                                            <h3><a href="#">Web Developing</a></h3>
+                                            <div class="meta-box clearfix">
+                                                <span class="entry-categories">Web and Mobile app Development</span>
+                                            </div>
+                                   
+                                            <footer style="padding:10px 10px;">
+                                                <div style="float:left;" id="nivo-lightbox-demo"> <p> <a href="portfolioItems/big/web/portfolio/portfolio.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo" rel="prettyPhoto[portfolio]">View</a> </p></div> 
+                                                 <div style="float:right;" id="nivo-lightbox-demo"><p> <a href="http://rezwansaki.github.io/portfolio/" target="_blank">Demo</a> </p></div>                                 
+                                            </footer>
+                                        </figcaption>
+                                    </figure>
+
+                                </li>    
+                                <!-- web -->
+                                
+                                
+                                
+                                <!-- graphics -->
+                                <li class="element graphics isotope-item" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(295px, 0px, 0px);">
+                                  <figure>
+                                      <img src="portfolioItems/graphics/poster_magazine_flyer/Alinsworld_Comp_Train1.jpg" alt="">
+                                      <figcaption>
+                                            <h3><a href="#">Graphics</a></h3>
+                                            <div class="meta-box clearfix">
+                                                <span class="entry-categories">Photoshop CS5 and Illustrator CS4</span>
+                                            </div>
+                                   
+                                            <footer style="padding:0 10px;">
+                                                <div style="float:left;" id="nivo-lightbox-demo"> <p> <a href="portfolioItems/big/graphics/poster_magazine_flyer/Alinsworld_Comp_Train1.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo" rel="prettyPhoto[portfolio]">View</a> </p></div>   
+                                                <div style="float:right;" id="nivo-lightbox-demo"><p> <a href="#" >Details</a> </p></div>                                            
+                                            </footer>
+                                        </figcaption>
+                                    </figure>
+
+                                </li>
+                                
+                                <li class="element graphics isotope-item" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(295px, 0px, 0px);">
+                                  <figure>
+                                      <img src="portfolioItems/graphics/poster_magazine_flyer/AlinsworldWeb%20Solution2.jpg" alt="">
+                                      <figcaption>
+                                            <h3><a href="#">Graphics</a></h3>
+                                            <div class="meta-box clearfix">
+                                                <span class="entry-categories">Photoshop CS5 and Illustrator CS4</span>
+                                            </div>
+                                   
+                                            <footer style="padding:0 10px;">
+                                                <div style="float:left;" id="nivo-lightbox-demo"> <p> <a href="portfolioItems/big/graphics/poster_magazine_flyer/AlinsworldWeb%20Solution2.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo" rel="prettyPhoto[portfolio]">View</a> </p></div>      
+                                                <div style="float:right;" id="nivo-lightbox-demo"><p> <a href="#" >Details</a> </p></div>                                         
+                                            </footer>
+                                        </figcaption>
+                                    </figure>
+
+                                </li>
+                                
+                                <li class="element graphics isotope-item" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(295px, 0px, 0px);">
+                                  <figure>
+                                      <img src="portfolioItems/graphics/poster_magazine_flyer/BDGermanTech2.jpg" alt="">
+                                      <figcaption>
+                                            <h3><a href="#">Graphics</a></h3>
+                                            <div class="meta-box clearfix">
+                                                <span class="entry-categories">Photoshop CS5 and Illustrator CS4</span>
+                                            </div>
+                                   
+                                            <footer style="padding:0 10px;">
+                                                <div style="float:left;" id="nivo-lightbox-demo"> <p> <a href="portfolioItems/big/graphics/poster_magazine_flyer/AlinsworldWeb%20Solution2.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo" rel="prettyPhoto[portfolio]">View</a> </p></div>    
+                                                <div style="float:right;" id="nivo-lightbox-demo"><p> <a href="#" >Details</a> </p></div>                                           
+                                            </footer>
+                                        </figcaption>
+                                    </figure>
+
+                                </li>
+                                
+                                <li class="element graphics isotope-item" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(295px, 0px, 0px);">
+                                  <figure>
+                                      <img src="portfolioItems/graphics/poster_magazine_flyer/BGTTC_Flyer.jpg" alt="">
+                                      <figcaption>
+                                            <h3><a href="#">Graphics</a></h3>
+                                            <div class="meta-box clearfix">
+                                                <span class="entry-categories">Photoshop CS5 and Illustrator CS4</span>
+                                            </div>
+                                   
+                                            <footer style="padding:0 10px;">
+                                                <div style="float:left;" id="nivo-lightbox-demo"> <p> <a href="portfolioItems/big/graphics/poster_magazine_flyer/BGTTC_Flyer.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo" rel="prettyPhoto[portfolio]">View</a> </p></div> 
+                                                <div style="float:right;" id="nivo-lightbox-demo"><p> <a href="#" >Details</a> </p></div>                                              
+                                            </footer>
+                                        </figcaption>
+                                    </figure>
+
+                                </li>
+                                
+                                <li class="element graphics isotope-item" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(295px, 0px, 0px);">
+                                  <figure>
+                                      <img src="portfolioItems/graphics/poster_magazine_flyer/Johnny%20English1.jpg" alt="">
+                                      <figcaption>
+                                            <h3><a href="#">Graphics</a></h3>
+                                            <div class="meta-box clearfix">
+                                                <span class="entry-categories">Photoshop CS5 and Illustrator CS4</span>
+                                            </div>
+                                   
+                                            <footer style="padding:0 10px;">
+                                                <div style="float:left;" id="nivo-lightbox-demo"> <p> <a href="portfolioItems/big/graphics/poster_magazine_flyer/Johnny%20English1.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo" rel="prettyPhoto[portfolio]">View</a> </p></div>  
+                                                <div style="float:right;" id="nivo-lightbox-demo"><p> <a href="#" >Details</a> </p></div>                                             
+                                            </footer>
+                                        </figcaption>
+                                    </figure>
+
+                                </li>
+                                
+                                <li class="element graphics isotope-item" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(295px, 0px, 0px);">
+                                  <figure>
+                                      <img src="portfolioItems/graphics/poster_magazine_flyer/Kesha_Magazine.jpg" alt="">
+                                      <figcaption>
+                                            <h3><a href="#">Graphics</a></h3>
+                                            <div class="meta-box clearfix">
+                                                <span class="entry-categories">Photoshop CS5 and Illustrator CS4</span>
+                                            </div>
+                                   
+                                            <footer style="padding:0 10px;">
+                                                <div style="float:left;" id="nivo-lightbox-demo"> <p> <a href="portfolioItems/big/graphics/poster_magazine_flyer/Kesha_Magazine.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo" rel="prettyPhoto[portfolio]">View</a> </p></div> 
+                                                <div style="float:right;" id="nivo-lightbox-demo"><p> <a href="#" >Details</a> </p></div>                                              
+                                            </footer>
+                                        </figcaption>
+                                    </figure>
+
+                                </li>
+                                
+                                <li class="element graphics isotope-item" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(295px, 0px, 0px);">
+                                  <figure>
+                                      <img src="portfolioItems/graphics/poster_magazine_flyer/RetroNight2.jpg" alt="">
+                                      <figcaption>
+                                            <h3><a href="#">Graphics</a></h3>
+                                            <div class="meta-box clearfix">
+                                                <span class="entry-categories">Photoshop CS5 and Illustrator CS4</span>
+                                            </div>
+                                   
+                                            <footer style="padding:0 10px;">
+                                                <div style="float:left;" id="nivo-lightbox-demo"> <p> <a href="portfolioItems/big/graphics/poster_magazine_flyer/RetroNight2.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo" rel="prettyPhoto[portfolio]">View</a> </p></div>  
+                                                <div style="float:right;" id="nivo-lightbox-demo"><p> <a href="#" >Details</a> </p></div>                                             
+                                            </footer>
+                                        </figcaption>
+                                    </figure>
+
+                                </li>
+                                
+                                <li class="element graphics isotope-item" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(295px, 0px, 0px);">
+                                  <figure>
+                                      <img src="portfolioItems/graphics/poster_magazine_flyer/RetroNight3.jpg" alt="">
+                                      <figcaption>
+                                            <h3><a href="#">Graphics</a></h3>
+                                            <div class="meta-box clearfix">
+                                                <span class="entry-categories">Photoshop CS5 and Illustrator CS4</span>
+                                            </div>
+                                   
+                                            <footer style="padding:0 10px;">
+                                                <div style="float:left;" id="nivo-lightbox-demo"> <p> <a href="portfolioItems/big/graphics/poster_magazine_flyer/RetroNight3.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo" rel="prettyPhoto[portfolio]">View</a> </p></div>     
+                                                <div style="float:right;" id="nivo-lightbox-demo"><p> <a href="#" >Details</a> </p></div>                                          
+                                            </footer>
+                                        </figcaption>
+                                    </figure>
+
+                                </li>
+                                
+                                <li class="element graphics isotope-item" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(295px, 0px, 0px);">
+                                  <figure>
+                                      <img src="portfolioItems/graphics/poster_magazine_flyer/TulanePark.jpg" alt="">
+                                      <figcaption>
+                                            <h3><a href="#">Graphics</a></h3>
+                                            <div class="meta-box clearfix">
+                                                <span class="entry-categories">Photoshop CS5 and Illustrator CS4</span>
+                                            </div>
+                                   
+                                            <footer style="padding:0 10px;">
+                                                <div style="float:left;" id="nivo-lightbox-demo"> <p> <a href="portfolioItems/big/graphics/poster_magazine_flyer/TulanePark.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo" rel="prettyPhoto[portfolio]">View</a> </p></div>  
+                                                <div style="float:right;" id="nivo-lightbox-demo"><p> <a href="#" >Details</a> </p></div>                                 
+                                            </footer>
+                                        </figcaption>
+                                    </figure>
+
+                                </li>
+                                
+                                <li class="element graphics isotope-item" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(295px, 0px, 0px);">
+                                  <figure>
+                                      <img src="portfolioItems/graphics/poster_magazine_flyer/UniversityFlyer.jpg" alt="">
+                                      <figcaption>
+                                            <h3><a href="#">Graphics</a></h3>
+                                            <div class="meta-box clearfix">
+                                                <span class="entry-categories">Photoshop CS5 and Illustrator CS4</span>
+                                            </div>
+                                   
+                                            <footer style="padding:0 10px;">
+                                                <div style="float:left;" id="nivo-lightbox-demo"> <p> <a href="portfolioItems/big/graphics/poster_magazine_flyer/UniversityFlyer.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo" rel="prettyPhoto[portfolio]">View</a> </p></div>   
+                                                <div style="float:right;" id="nivo-lightbox-demo"><p> <a href="#" >Details</a> </p></div>                                            
+                                            </footer>
+                                        </figcaption>
+                                    </figure>
+
+                                </li>
+                                
+                                <li class="element graphics isotope-item" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(295px, 0px, 0px);">
+                                  <figure>
+                                      <img src="portfolioItems/graphics/OutOfFrame.jpg" alt="">
+                                      <figcaption>
+                                            <h3><a href="#">Graphics</a></h3>
+                                            <div class="meta-box clearfix">
+                                                <span class="entry-categories">Photoshop CS5 and Illustrator CS4</span>
+                                            </div>
+                                   
+                                            <footer style="padding:0 10px;">
+                                                <div style="float:left;" id="nivo-lightbox-demo"> <p> <a href="portfolioItems/big/graphics/OutOfFrame.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo" rel="prettyPhoto[portfolio]">View</a> </p></div>    
+                                                <div style="float:right;" id="nivo-lightbox-demo"><p> <a href="#" >Details</a> </p></div>                                           
+                                            </footer>
+                                        </figcaption>
+                                    </figure>
+
+                                </li>
+                                
+                                <li class="element graphics isotope-item" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(295px, 0px, 0px);">
+                                  <figure>
+                                      <img src="portfolioItems/graphics/TheBrokenHead.jpg" alt="">
+                                      <figcaption>
+                                            <h3><a href="#">Graphics</a></h3>
+                                            <div class="meta-box clearfix">
+                                                <span class="entry-categories">Photoshop CS5 and Illustrator CS4</span>
+                                            </div>
+                                   
+                                            <footer style="padding:0 10px;">
+                                                <div style="float:left;" id="nivo-lightbox-demo"> <p> <a href="portfolioItems/big/graphics/TheBrokenHead.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo" rel="prettyPhoto[portfolio]">View</a> </p></div>
+                                                <div style="float:right;" id="nivo-lightbox-demo"><p> <a href="#" >Details</a> </p></div>                                               
+                                            </footer>
+                                        </figcaption>
+                                    </figure>
+
+                                </li>
+                                
+                                <li class="element graphics isotope-item" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(295px, 0px, 0px);">
+                                  <figure>
+                                      <img src="portfolioItems/graphics/Touch-Of-Love-copy.jpg" alt="">
+                                      <figcaption>
+                                            <h3><a href="#">Graphics</a></h3>
+                                            <div class="meta-box clearfix">
+                                                <span class="entry-categories">Photoshop CS5 and Illustrator CS4</span>
+                                            </div>
+                                   
+                                            <footer style="padding:0 10px;">
+                                                <div style="float:left;" id="nivo-lightbox-demo"> <p> <a href="portfolioItems/big/graphics/Touch-Of-Love-copy.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo" rel="prettyPhoto[portfolio]">View</a> </p></div>    
+                                                <div style="float:right;" id="nivo-lightbox-demo"><p> <a href="#" >Details</a> </p></div>                                           
+                                            </footer>
+                                        </figcaption>
+                                    </figure>
+
+                                </li>
+                                <!-- /graphics -->
+
+                               
+                                <div class="clear"> </div>
+                            </ul> <!-- #container -->
+                            <!-- /Portfolio items are added here -->
+             
+                      </div> <!-- /portfolio items -->
+                
+
+                      
+<!-- ======================================== Portfolio items will be added here ============================================== -->
+                       
+                
+                </div>
+                
+
+                <!-- navbar-fixed-bottom -->
+                <div class="navbar navbar-default navbar-fixed-bottom color-1" style="background-color: #2c2c2c; border:1px #676565 solid;">
+                       <!-- Category list -->
+                        <div class="container-fluid" id="category_list">
+
+<!-- ======================================== Portfolio category will be added here ============================================== -->
+                     <!-- Filtered Category -->
+                    <div id="options" class="clearfix">
+                        <ul id="filters" class="option-set clearfix" data-option-key="filter">
+                       	    <li><a href="#filter" data-option-value="*">All Categories</a></li>
+                            <li><a href="#filter" data-option-value=".logo-design">Logo-design</a></li>
+                            <li><a href="#filter" data-option-value=".photography">Photography</a></li>
+                            <li><a href="#filter" data-option-value=".vector-art">Vector Art</a></li>
+                            <li><a href="#filter" data-option-value=".web">Web</a></li>
+                            <li><a href="#filter" data-option-value=".graphics">Graphics</a></li>                        
+                        </ul><!--end:filters-->
+                    </div>
+                    <!-- /Filtered Category -->
+<!-- ======================================== Portfolio category will be added here ============================================== -->
+                    
+                    </div> <!-- /Category list-->
+                 </div> <!-- /navbar-fixed-bottom -->
+              </div> <!-- /middle -->
+             
+             
+             
+             <!-- footer -->
+             <div class="container-fluid" id="footer_container_2">
+                 <div class="row" id="footer">
+                     <div>
+                         Copyright &copy; Alinsworld.com 2014.
+                         <br>
+                         Design & Developing by <a href="http://www.alinsworld.com" target="_blank">Alin</a>.
+                     </div>
+                 </div>
+             </div> <!-- /footer -->
+             
+          </div> <!-- /inner container -->
+      </div> <!-- /main container -->
+      
+      
+      
+      
+      
+      
+       <!-- slide panel : call the function -->
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('[data-slidepanel]').slidepanel({
+                    orientation: 'left',
+                    mode: 'push'
+                });
+            });
+        </script> <!-- /slide panel : call the function -->
+        
+        
+        
+
+  </body>
+  
+</html>

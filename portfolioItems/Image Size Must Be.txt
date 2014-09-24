@@ -1,0 +1,15 @@
+
+
+  Images width must be maximum 1000px. 
+
+  actually ratio must be perfect and same for all images.
+
+  so need to be edited by photoshop and keep a standard rules.
+
+  such as, (1000 x 800) px. 
+
+
+
+   trying to :
+
+   size : less than 30 kb and (280x252) px

@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+   
+   <!--
+   Project Name : Portfolio
+   Type : Website Developing 
+   Developer : Alin (alinsworld.com)
+   Completed date : 
+   Design (full psd and developing all) : by Alin (using Adobe Photoshop CS5)
+   Using to develope : Bootstrap 3.2.0, HTML5, CSS3, JavaScript, jQuery 
+   Responsive for : 
+   -->
+   
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio - Home</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    
+     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    
+    <!-- my own style sheet -->
+    <link rel="stylesheet" href="css/mystyle.css">
+    
+    <!-- using google font -->
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
+    
+    <!-- font awesome -->
+    <link rel="stylesheet" id="font-awesome-css" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" type="text/css" media="screen">
+        
+    <!-- slide panel -->    
+    <script type="text/javascript" src="SlidePanel/js/jquery.slidepanel.js"></script>
+    <link rel="stylesheet" type="text/css" href="SlidePanel/css/jquery.slidepanel.css"> 
+
+    
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <style>
+        #side_menu {
+            padding-left: 0;
+        }
+        
+        /* go to top */
+        .scroll-top-wrapper {
+            position: fixed;
+            opacity: 0;
+            visibility: hidden;
+            overflow: hidden;
+            text-align: center;
+            z-index: 99999999;
+            background-color: #777777;
+            color: #eeeeee;
+            width: 50px;
+            height: 48px;
+            line-height: 48px;
+            right: 30px;
+            bottom: 30px;
+            padding-top: 2px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+            -webkit-transition: all 0.5s ease-in-out;
+            -moz-transition: all 0.5s ease-in-out;
+            -ms-transition: all 0.5s ease-in-out;
+            -o-transition: all 0.5s ease-in-out;
+            transition: all 0.5s ease-in-out;
+        }
+        .scroll-top-wrapper:hover {
+            background-color: #888888;
+        }
+        .scroll-top-wrapper.show {
+            visibility:visible;
+            cursor:pointer;
+            opacity: 1.0;
+        }
+        .scroll-top-wrapper i.fa {
+            line-height: inherit;
+        }
+        /* /go to top */
+        
+    </style>
+    
+    
+    
+    <!-- go to top -->
+    <script>
+ 
+    $(function(){
+
+        $(document).on( 'scroll', function(){
+
+            if ($(window).scrollTop() > 100) {
+                $('.scroll-top-wrapper').addClass('show');
+            } else {
+                $('.scroll-top-wrapper').removeClass('show');
+            }
+        });
+    });
+        
+        $(function(){
+ 
+            $(document).on( 'scroll', function(){
+
+                if ($(window).scrollTop() > 100) {
+                    $('.scroll-top-wrapper').addClass('show');
+                } else {
+                    $('.scroll-top-wrapper').removeClass('show');
+                }
+            });
+
+            $('.scroll-top-wrapper').on('click', scrollToTop);
+        });
+ 
+        function scrollToTop() {
+            verticalOffset = typeof(verticalOffset) != 'undefined' ? verticalOffset : 0;
+            element = $('body');
+            offset = element.offset();
+            offsetTop = offset.top;
+            $('html, body').animate({scrollTop: offsetTop}, 500, 'linear');
+        }
+      </script>
+    <!-- / go to top -->
+
+  </head>
+
+  <body>
+         
+          <!-- main container -->
+          <div class="container" id="main_container">
+         <!-- inner container -->
+          <div class="conainer-fluid" id="inner_container">
+            
+            <!-- sideber menu -->
+            <div class="container-fluid" id="side_menu">
+               <div class="row">
+                   <div class="col-md-12 col-sm-12 col-xs-12">
+                        <a href="sidepanel_left.html" data-slidepanel="panel">
+                            <span class="glyphicon glyphicon-th-list"></span>
+                        </a> 
+                   </div>
+               </div>                
+            </div> <!-- /sidebar menu-->
+            
+             <!-- top -->
+             <div class="container-fluid" id="top">
+                 <div class="row-fluid">
+                     <!-- logo -->
+                     <div class="col-md-5 col-sm-5 col-xs-12" id="logo">
+                         <img src="img/logo1.jpg" alt="">    
+                     </div> <!-- /logo -->
+                     
+                     <!-- social icons-->
+                     <div class="col-md-7 col-sm-7 col-xs-12" id="social_icons">
+                         <a href="https://github.com/rezwansaki" target="_blank"><img src="img/github.png" alt=""></a>
+                         <a href="https://twitter.com/rezwansaki" target="_blank"><img src="img/twitter.png" alt=""></a>
+                         <a href="#"><img src="img/skype.png" alt=""></a>
+                         <a href="https://www.facebook.com/rezwan.alin" target="_blank"><img src="img/facebook.png" alt=""></a>
+                     </div> <!-- /social icons-->
+                 </div>
+             </div> <!-- /top -->
+             
+             <!-- Go to top -->
+            <div class="scroll-top-wrapper ">
+            <!-- if use span then need internet to display this icon -->
+            <span class="scroll-top-inner">
+            <i class="fa fa-2x fa-arrow-circle-up"></i>
+            </span> 
+            <!-- <img src="img/Scroll-to-top-button-white.png" alt="" style="width:80%;margin-top:-8px;"> -->
+            </div>
+            <!-- /Go to top -->
+            
+             
+             <!-- middle -->
+             <div class="container-fluid" id="middle">
+                 <!-- banner -->
+                 <div class="row-fluid" id="banner">
+                     <img src="img/banner-2.jpg" alt="">
+                 </div> <!-- /banner -->
+                 
+                 <!-- my_name -->
+                 <div class="row-fluid" id="my_name">
+                     <center>
+                         <big class="my-name-full">MD. REZWAN SAKI ALIN</big> <br/>
+                         <small class="my-title-full">Web designer & developer</small>
+                     </center>
+                 </div> <!-- /my_name -->
+                 
+                 <!-- my_speech -->
+                 <div class="row-fluid" id="my_speech">
+                     <p>
+                     <big class="my-speech-quot">"</big>Hi, I'm Alin. I'm a web designer & developer. I like to spend my time with web developing. I also like graphic & designing. So, Photoshop & Illustrator are my best friends. In here, I have shared some of my works. If you like to my works, please send me a message without any hesitation. Thanks!
+                     </p>
+                 </div> <!-- /my_speech -->
+                
+
+                 <!-- inner footer -->
+                 <div class="container-fluid hidden-xs" id="inner_footer">
+                         <!-- menu -->
+                     <div class="row" id="menu">
+                         <!-- circle button -->
+                          <div class="col-md-2 col-sm-2 hidden-xs" id="empty_space">
+                              
+                          </div> <!-- /empty space -->
+                         
+                         <div class="col-md-3 col-sm-3 hidden-xs" id="menu_aboutme">
+                             <a href="#" data-toggle="modal" data-target="#about1" class="round-button" style="text-decoration:none;">About</a>
+                         </div>
+
+                         <div class="col-md-3 col-sm-3 hidden-xs" id="menu_portfolio">
+                             <a href="portfolio.html" class="round-button" style="text-decoration:none;">Portfolio</a>
+                         </div>
+                         <div class="col-md-3 col-sm-3 hidden-xs" id="menu_contact">
+                             <a href="#" data-toggle="modal" data-target="#contact1" class="round-button" style="text-decoration:none;">Contact</a>
+                         </div> <!-- /circle button -->
+                     </div> <!-- /menu -->
+                 </div> <!-- /inner footer -->
+              </div> <!-- /middle -->
+             
+             
+             
+             <!-- footer -->
+             <div class="container-fluid" id="footer_container">
+                 <div class="row" id="footer">
+                     <div>
+                         Copyright &copy; Alinsworld.com 2014.
+                         <br>
+                         Design & Developing by <a href="http://www.alinsworld.com" target="_blank">Alin</a>.
+                     </div>
+                 </div>
+             </div> <!-- /footer -->
+             
+          </div> <!-- /inner container -->
+      </div> <!-- /main container -->
+      
+      
+      
+      <!-- ================================== modal ========================================== -->
+      <!-- About -->
+       <div class="modal fade" id="about1" role="dialog">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-body">
+                    <div class="list-group">
+                        <big>
+                            About Me
+                        </big>
+                        <br>
+                        <small>
+                            Hi, I'm Alin. I'm a web designer & developer. I like to spend my time with web developing. I also like graphic & designing. So, Photoshop & Illustrator are my best friends. In here, I have shared some of my works. If you like to my works, please send me a message without any hesitation. Thanks! 
+                        </small>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary btn-sm" data-dismiss="modal">Close</button>
+                    </div>
+              </div>
+            </div>
+          </div>
+         </div> <!-- /About -->
+         
+         
+         
+         <!-- Contact -->
+         <div class="modal fade" id="contact1" role="dialog">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-body">
+                    <div class="list-group">
+                        <big>Contact</big>
+                        <br>
+                        <small style="font-family:helvetica;font-size:12pt;color:gray;">
+                            rezwansaki@gmail.com <br>
+                            http://www.alinsworld.com <br>
+                        </small>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary btn-sm" data-dismiss="modal">Close</button>
+                    </div>
+              </div>
+            </div>
+          </div>
+         </div> <!-- /Contact -->
+      <!-- ==================================== /modal ======================================= -->
+      
+      
+      
+      
+        <!-- slide panel : call the function -->
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('[data-slidepanel]').slidepanel({
+                    orientation: 'left',
+                    mode: 'push'
+                });
+            });
+        </script> <!-- /slide panel : call the function -->
+
+  </body>
+  
+</html>
